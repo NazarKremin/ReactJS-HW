@@ -6,6 +6,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import AllUsers from "./components/Users/AllUsers";
 
 class App extends Component {
     render() {
@@ -15,10 +16,17 @@ class App extends Component {
                     <Link to={'/posts'}>
                         Posts
                     </Link>
-
+                    <div>
+                        <Link to={'/users'}>
+                            Users
+                        </Link>
+                    </div>
                     <Switch>
                         <Route path={'/posts'} render={() => {
                             return <AllPosts/>
+                        }}/>
+                        <Route path={'/users'} render={()=>{
+                            return <AllUsers/>
                         }}/>
                     </Switch>
 
