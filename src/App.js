@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Users from "./components/Users/Users";
 import Posts from "./components/Posts/Posts";
+import Comments from "./components/Comments/Comments";
 
 class App extends Component {
     render() {
@@ -24,12 +25,21 @@ class App extends Component {
                             Posts
                         </Link>
                     </div>
+                    <hr/>
+                    <div>
+                        <Link to={'/comments'}>
+                            Comments
+                        </Link>
+                    </div>
                     <Switch>
                         <Route path={'/users'} render={() => {
                             return <Users/>
                         }}/>
                         <Route path={'/posts'} render={() => {
                             return <Posts/>
+                        }}/>
+                        <Route path={'/comments'} render={() => {
+                            return <Comments/>
                         }}/>
                     </Switch>
                 </div>

@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 
 class CommentsUi extends Component {
     render() {
+        const {commentsItem, match: {url}} = this.props;
         return (
             <div>
-                
+                {commentsItem.postId}
+                {commentsItem.id}
+                <Link to={url + `/${commentsItem.id}`}>Moreeeeeeeeeee</Link>
             </div>
         );
     }
+
 }
 
-export default CommentsUi;
+export default withRouter(CommentsUi);
