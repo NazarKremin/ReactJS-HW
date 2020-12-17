@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Users from "./components/user/Users";
 import Posts from "./components/posts/Posts";
+import Comment from "./components/Comment/Comment";
 
 class App extends Component {
     render() {
@@ -8,6 +9,7 @@ class App extends Component {
             <div>
               <Users/>
               <Posts/>
+              <Comment/>
             </div>
         );
     }
