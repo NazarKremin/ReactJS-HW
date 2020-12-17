@@ -18,8 +18,9 @@ class Post extends Component {
         return (
             <div>
                 <div>
-                    {inputValue.id}<br/>
-                    {inputValue.title}
+                   <h5>Id: {inputValue.id}</h5>
+                    <h5>Title: {inputValue.title}</h5>
+                    <h5>Body: {inputValue.body}</h5>
                 </div>
             </div>
         );

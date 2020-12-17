@@ -18,8 +18,10 @@ class User extends Component {
         return (
             <div>
                 <div>
-                    <div>{Users.name}</div>
-                    {Users.username} {Users.email} </div>
+                    <div><h5>Name: {Users.name}</h5></div>
+                    <div><h5>Username: {Users.username}</h5></div>
+                    <div><h5>Mail:  {Users.email} </h5></div>
+                </div>
             </div>
         );
     }

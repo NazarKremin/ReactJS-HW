@@ -17,8 +17,10 @@ class Comments extends Component {
         const {commentValue} = this.state;
         return (
             <div>
-                {commentValue.id}<br/>
-                {commentValue.name}
+                <h5>Id: {commentValue.id}</h5>
+                <h5>Name: {commentValue.name}</h5>
+                <h5>Email: {commentValue.email}</h5>
+                <h5>Body: {commentValue.body}</h5>
             </div>
         );
     }

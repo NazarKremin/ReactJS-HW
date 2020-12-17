@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import CommentsService from "../service/CommentsService";
 import Comments from "./Comments";
 
 class Comment extends Component {
@@ -12,7 +11,7 @@ class Comment extends Component {
         const {commentValue} = this.state;
         return (
             <div>
-                <form action={'/savecomments'} ref={this.myForm}>
+                <form ref={this.myForm}>
                     Comments<input type={'number'} onInput={this.sendComments} value={this.state.commentValue}/>
                 </form>
                 <Comments id={commentValue} key={commentValue}/>
