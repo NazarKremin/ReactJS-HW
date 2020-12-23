@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import UseState from "./components/Practice 2/UseState";
+import React from 'react';
 import UseEffect from "./components/practice 1/UseEffect";
+import UseState from "./components/practice 1/UseState";
+import UseRef from "./components/practice 1/UseRef";
 
 function App() {
     return (
         <div>
-<UseEffect/>
-
+            <UseRef/>
         </div>
     );
 }

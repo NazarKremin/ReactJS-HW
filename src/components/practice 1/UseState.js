@@ -11,21 +11,22 @@ function UseState() {
     })
 
     function add() {
-        setCounter(counter +1)
+        setCounter(counter + 1)
     }
 
     function delet() {
-        setCounter(counter -1)
+        setCounter(counter - 1)
     }
 
     function user() {
-        setState(prev =>{
-            return{
+        setState(prev => {
+            return {
                 ...prev,
-                name:'Burak'
+                name: 'Burak'
             }
         })
     }
+
 
     return (
         <div>
@@ -33,7 +34,7 @@ function UseState() {
             <button onClick={add}>Добавити</button>
             <button onClick={delet}>Видалити</button>
             <button onClick={user}>User</button>
-            <div>{JSON.stringify(state,null,2)}</div>
+            <div>{JSON.stringify(state, null, 2)}</div>
         </div>
     );
 }
