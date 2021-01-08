@@ -1,0 +1,3 @@
+export const INC_COUNTER = 'INC_COUNTER'
+export const DEX_COUNTER = 'DEX_COUNTER'
+export const RESET_COUNTER = 'RESET_COUNTER'
